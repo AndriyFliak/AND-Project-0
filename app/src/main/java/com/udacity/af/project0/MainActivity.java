@@ -39,27 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void project0Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project0Button), Toast.LENGTH_LONG).show();
-    }
-
-    public void project1Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project1Button), Toast.LENGTH_LONG).show();
-    }
-
-    public void project2Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project2Button), Toast.LENGTH_LONG).show();
-    }
-
-    public void project3Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project3Button), Toast.LENGTH_LONG).show();
-    }
-
-    public void project4Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project4Button), Toast.LENGTH_LONG).show();
-    }
-
-    public void project5Button(View view) {
-        Toast.makeText(this, getResources().getText(R.string.project5Button), Toast.LENGTH_LONG).show();
+    public void buttonClick(View view) {
+        Toast.makeText(this, ((Button) view).getText(), Toast.LENGTH_LONG).show();
     }
 }

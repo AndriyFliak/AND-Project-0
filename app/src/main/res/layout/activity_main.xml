@@ -1,6 +1,7 @@
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -8,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
-    android:background="#dfeaf1">
+    android:background="@color/background">
 
 
     <TextView
@@ -17,45 +18,44 @@
         android:id="@+id/titleTextView"
         android:text="@string/titleTextView"
         android:textSize="25sp"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/titleTextView">
+        android:layout_gravity="center_horizontal">
 
         <Button
             android:id="@+id/project0Button"
             style="@style/Buttons"
             android:text="@string/project0Button"
-            android:onClick="project0Button" />
+            android:onClick="buttonClick" />
 
         <Button
             android:id="@+id/project1Button"
             style="@style/Buttons"
             android:text="@string/project1Button"
-            android:onClick="project1Button" />
+            android:onClick="buttonClick" />
 
         <Button
             android:id="@+id/project2Button"
             style="@style/Buttons"
             android:text="@string/project2Button"
-            android:onClick="project2Button" />
+            android:onClick="buttonClick" />
 
         <Button
             android:id="@+id/project3Button"
             style="@style/Buttons"
             android:text="@string/project3Button"
-            android:onClick="project3Button" />
+            android:onClick="buttonClick" />
 
         <Button
             android:id="@+id/project4Button"
             style="@style/Buttons"
             android:text="@string/project4Button"
-            android:onClick="project4Button" />
+            android:onClick="buttonClick" />
 
         <Button
             android:id="@+id/project5Button"
@@ -65,4 +65,4 @@
             android:background="#f44336"
             android:textColor="#ffffff" />
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
